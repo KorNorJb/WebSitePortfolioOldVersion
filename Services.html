@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styleServices.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<img src="img/Portfolio/logo.png" alt="" class="logo">
+			<div class="navmenu">
+				<ul class="nav-menu">
+					<li><a href="index.html" class="nav home">Home</a></li>
+					<li><a href="AboutMe.html" class="nav about">About me</a></li>
+					<li><a href="Portfolio.html" class="nav port">Portfolio</a></li>
+					<li><a href="Services.html" class="nav serv">Services</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="main">
+			<div class="title">
+				<h2>Web site layout</h2>
+			</div>
+
+			<div class="WebLayout">
+				<div class="SimpleLayout layout">
+					<div class="simple card">
+						<h2>Basic</h2>
+						<div class="line"></div>
+						<div class="text">
+
+							<div class="p">
+								<div>
+									<p>Clean code</p>
+								</div>
+								<div>
+									<p>Adaptive layout</p>
+								</div>
+								<div>
+									<p>Affordable price</p>
+								</div>
+							</div>
+						</div>
+						<div class="btn" id="pop_up_submit">
+							<button class="submit" id="pop_up_submit" type="submit" onclick="funcOpen()">Submit</button>
+						</div>
+					</div>
+				</div>
+				<div class="StandartLayout layout">
+					<div class="standart card">
+						<h2>Standart</h2>
+						<div class="line"></div>
+						<div class="text">
+							<div class="p">
+								<div>
+									<p>Package 'Basic'</p>
+								</div>
+								<div>
+									<p>More pages</p>
+								</div>
+								<div>
+									<p>Affordable price</p>
+								</div>
+							</div>
+						</div>
+						<div class="btn">
+							<button class="submit" id="pop_up_submit2" type="submit"
+								onclick="funcOpen()">Submit</button>
+						</div>
+					</div>
+				</div>
+				<div class="ProfiLayout layout">
+					<div class="profi card">
+						<h2>Premium</h2>
+						<div class="line"></div>
+						<div class="text">
+							<div class="p">
+								<div>
+									<p>Package 'Standart'</p>
+								</div>
+								<div>
+									<p>No limits to pages</p>
+								</div>
+								<div>
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="btn">
+							<button class="submit" id="pop_up_submit3" type="submit"
+								onclick="funcOpen()">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pop_up" id="pop_up">
+				<div class="pop_up_container">
+					<div class="pop_up_body">
+						<form action="">
+							<p>Leave a request</p>
+							<input type="name" name="name" placeholder="Name" required>
+							<input type="email" name="E-mail" required placeholder="E-mail">
+							<select name="select" id="select">
+								<option class="basicOpt" id="basicOpt">Choose Layout</option>
+								<option class="basicOpt" id="basicOpt">Basic Layout</option>
+								<option class="standartOpt" id="standartOpt">Standart Layout</option>
+								<option class="premiumOpt" id="premiumOpt">Premium Layout</option>
+							</select>
+							<button class="btnOrder">Order</button>
+						</form>
+						<div id="pop_up_close">&#10006</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="js/scritpServices.js"></script>
+</body>
+
+</html>

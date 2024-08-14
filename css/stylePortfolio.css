@@ -1,0 +1,176 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+	background: #FBFBFB;
+}
+header{
+	width: 100%;
+	height: 80px;
+	background: #000;
+	background: rgb(255,225,41);
+	background: linear-gradient(90deg, rgba(255,225,41,1) 0%, rgba(240,34,34,1) 100%);
+}
+h1 {
+	color: black;
+}
+.container {
+	    max-width: 1140px;
+	    margin: 0 auto;
+}
+.navmenu {
+    padding-top: 20px;
+}
+.logo {
+	width: 60px;
+	height: 60px;	
+	position: absolute;
+}
+.nav-menu {
+    list-style-type: none;
+    text-align: center;
+}
+li {
+    display: inline;
+    padding-left: 40px;
+}
+.nav {
+    text-decoration: none;
+    color: black;
+    font-family: "Arial", serif;
+    font-size: 20px;
+    transition: all .5s ease;
+    text-underline-offset: 5px;
+}
+.nav:hover {
+	text-decoration: underline 2px;
+	color: white;
+}
+.my {
+	background: black;
+	width: 300px;
+	height: 150px;
+	text-align: center;
+}
+h2 {
+	color: white;
+	text-align: center;
+}
+.my > img {
+	width: 100%;
+}
+.my > p {
+	color: white;
+}
+.silder_block {
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+}
+.wrapper {
+	position: relative;
+	width: 100%;
+/*	height: 80vh;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.slider {
+	position: relative;
+	overflow: hidden;
+	max-width: 900px;
+	height: auto;
+}
+.slider_item {
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+.slider_item .item {
+	width: 20%;
+	transition: all .7s ease;
+}
+.slider_item .item img{
+	max-width: 100%;
+	height: auto;
+}
+.slider_item input {
+	position: absolute;
+	visibility: hidden;
+}
+.slider_nav {
+	position: absolute;
+	bottom: 21px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.slider_nav .slider_nav_item {
+	width: 60px;
+	height: 15px;
+	border: 2px solid #000;
+	margin: 7px;
+	transition: all .5s ease;
+	cursor: pointer;
+	z-index: 55;
+
+}
+.slider_nav .slider_nav_item:hover {
+	background-color: #fff;
+}
+#s1:checked ~ .s1 {
+	margin-left: 0;
+}
+#s2:checked ~ .s1 {
+	margin-left: -20%;
+}
+#s3:checked ~ .s1 {
+	margin-left: -40%;
+}
+.comingsoon {
+	background: black;
+	color: white;
+	text-align: center;
+}
+.comingsoon p {
+	font-size: 30px;
+}
+.site {
+	width: 100%;
+	height: 100%;
+}
+@media (max-width:576px) {
+	h1 {
+		font-size: 16px;
+	}
+	li {
+		padding-left: 15px;
+	}
+	.nav {
+		font-size: 15px;	
+	}
+}
+@media (max-width:390px) {
+	.nav {
+		font-size: 12px;
+	}
+	.nav-menu {
+		margin-left: 22px;
+	}
+	.logo {
+		width: 40px;
+		height: 40px;
+	}
+	header {
+		height: 50px;
+	}
+	.slider_nav .slider_nav_item {
+		width: 20px;
+    	height: 10px;
+	}
+}
